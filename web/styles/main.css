@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    background-color: #ffe6f2;
+    color: #cc0066;
+}
+.container {
+    background-color: #fff0f5;
+    padding: 2em 3em;
+    border: 3px solid #ff66b2;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 500px;
+}
+
+h1, h2 {
+    color: #e60073;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+a {
+    color: #ff3399;
+    text-decoration: none;
+}
+a:hover {
+    color: #cc0066;
+    text-decoration: underline;
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    width: 15em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;
+}
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+br {
+    clear: both;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.75em 1.5em;
+}
+
+th {
+    background-color: #ffb3d9;
+    color: #cc0066;
+}
+
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+.align_left {
+    text-align: left;
+}
+.align_right {
+    text-align: left;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* khi hover vào ô */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #ff66b2;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ff1a8c;
+    box-shadow: 0 0 6px #ff99cc;
+}
