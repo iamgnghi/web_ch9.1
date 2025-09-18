@@ -8,13 +8,13 @@ WORKDIR /app
 # Copy source code
 COPY . .
 
-# Build WAR từ build.xml
-RUN ant war
+# Build WAR từ build.xml (target dist)
+RUN ant dist
 
 # Xóa app mặc định trong Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy WAR vừa build vào Tomcat (lấy bất kỳ file .war trong dist/)
+# Copy WAR vừa build vào Tomcat
 RUN cp dist/*.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
